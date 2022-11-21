@@ -2,18 +2,20 @@ img {
     width: 30%;
 }
 
-/* body {
+body {
+    text-align: center;
+} 
+
+h1 {
+    font-family:'Courier New', Courier, monospace;
     text-align: center;
 }
-
 ul {
     list-style-type: none;
 }
-
 .center {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-
-} */
+}

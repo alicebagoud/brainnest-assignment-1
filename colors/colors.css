@@ -1,0 +1,15 @@
+h1 {
+    color: blue;
+}
+h2 {
+    color: #ff0000;
+}
+h3 {
+    color: rgb(255, 165, 0);
+}
+h4 {
+    color: hsl(300, 76%, 72%);
+}
+div {
+    background-color:blanchedalmond
+}
