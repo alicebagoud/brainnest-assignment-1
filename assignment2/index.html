@@ -8,63 +8,86 @@
     <title>Assignment 2</title>
 </head>
 
-    <header class="site-header">
-        <nav class="nav-bar">
-            <h3 id="nav-bar-h3">Header Logo</h3>
-            <ul class="nav-bar-links">
-                <li><a href="">header link two</a></li>
-                <li><a href="">header link one</a></li>
-                <li><a href="">header link three</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="awesomeWebsite"> 
-        <h1>This website is awesome</h1>
-        <p>
-            This website has some subtext that goes here under the main title.
-            It's a smaller font and the color is lower contrast.
-        </p>
-        <div class="placeholderBox">
-            this is a placeholder for an image
+<!-- Nav Bar -->
+    <nav>
+        <div class="navbar-left">
+        <h3>Header Logo</h3>
         </div>
-        <button class="firstSignUpButton">Sign up</button>
-    </div>
 
-    <div class="randomInfo">
-        <figure>
-            <h1>Some random information.</h1>
-            <div class="flex-container-information">
-                <figure>
-                    <div class="box"></div>
-                    <figcaption> 
-                            this is some subtext under an illustration or image
-                    </figcaption>
-                </figure>
+        <div class="navbar-right">
+            <ul>
+                <li>
+                <a href="/">header link one</a>
+                </li>
+                <li>
+                <a href="/">header link two</a>
+                </li>
+                <li>
+                <a href="/">header link three</a>
+                </li>
+            </ul>    
+        </div>
+        <img src="./imgs/icon_menu.svg" alt="menu" class="menu">
+    </nav>
 
-                <figure>
-                    <div class="box"></div>
-                    <figcaption> 
-                            this is some subtext under an illustration or image
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <div class="box"></div>
-                    <figcaption> 
-                            this is some subtext under an illustration or image
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <div class="box"></div>
-                    <figcaption> 
-                            this is some subtext under an illustration or image
-                    </figcaption>
-                </figure>
+<!-- Awesome Website -->
+    <section class="main-container">
+        <div class="info-container"></div>
+            <div class="awesomeWebsite"> 
+                <h1>This website is awesome</h1>
+                <p>
+                    This website has some subtext that goes here under the main title.
+                    It's a smaller font and the color is lower contrast.
+                </p>
+                <div class="button">
+                    <button class="firstSignUpButton">Sign up</button>
+                </div>
             </div>
-        </figure>
-    </div>
+
+            <div class="awesomeWebsite placeholderBox">
+                this is a placeholder for an image
+            </div>
+        </div>
+    </section>
+
+<!-- Random Information -->
+
+    <section class="randomInfo">    
+        <div>
+            <figure>
+                <h1>Some random information.</h1>
+                <div class="flex-container-information">
+                    <figure>
+                        <div class="box"></div>
+                        <figcaption> 
+                                this is some subtext under an illustration or image
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <div class="box"></div>
+                        <figcaption> 
+                                this is some subtext under an illustration or image
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <div class="box"></div>
+                        <figcaption> 
+                                this is some subtext under an illustration or image
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <div class="box"></div>
+                        <figcaption> 
+                                this is some subtext under an illustration or image
+                        </figcaption>
+                    </figure>
+                </div>
+            </figure>
+        </div>
+    </section>
 
     <div class="quote">
         <p>
@@ -76,16 +99,17 @@
         <h4>-Thor</h4>
     </div>
 
-    <div>
+    <div class="actionTime">
         <div class="blueDiv">
             <h2>Call to action! It's time!</h2>
             <p>Sign up for our product by clicking that button right over there!</p>
+        </div>
+
+        <div class="button-div">
             <button class="secondSignUpButton">Sign up</button>
         </div>
     </div>
 
     <footer>Copyright &copy;</footer>
-
-    
 </body>
 </html>

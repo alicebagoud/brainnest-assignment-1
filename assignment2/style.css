@@ -16,80 +16,91 @@
 }
 
 
+/* Nav Bar */
 body {
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     font-family: "Roboto";
 }
 
-/* Header */
-
-.site-header {
-    background-color: #1f2937;
-    position: fixed;
-    width: 100%;
-}
-#nav-bar-h3 {
-    color: #F9FAF8;
-    font-size: 24px;
-    align-self: left;
-    font-family: "RobotoBold";
-}
-.nav-bar {
+nav {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between;
+    padding: 0 300px;
+    background-color: #1f2937;
 }
-.nav-bar-links {
-    color: #E5E7EB;
+.menu {
+    display: none;
+}
+.navbar-left h3,
+.navbar-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.navbar-left {
+    display: flex;
+}
+.navbar-left h3 {
+    margin-left: 12px;
+    font-family: "RobotoBold";
+    font-size: 24px;
+    color: #F9FAF8;
+    padding: 15px 0 0 0;
+    margin: 0;
     text-decoration: none;
 }
-ul {
-    list-style-type: none;
+.navbar-right {
+    padding: 15px;
 }
-li {
-    float: right;
-}
-li a {
+.navbar-right ul li a {
+    text-decoration: none;
+    font-family: "Roboto";
     color: #E5E7EB;
     font-size: 18px;
-    text-align: center;
     padding: 15px;
-    text-decoration: none;
+}
+.navbar-right ul li a:hover {
+    color: #3882F6;
 }
 
 /* This website is awesome */
 
+.main-container {
+    background-color: #1f2937;
+    width: 100%;
+}
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 26px;
+    place-content: center;
+}
 .awesomeWebsite {
     background-color: #1f2937;
-    padding: 50px 0px 50px 230px;
-    display: flex;
-    flex-direction: column;
+    width: 750px;
 }
 .awesomeWebsite h1 {
     font-family: "RobotoExtraBold";
     color: #F9FAF8;
-    margin: 50px 0 0 0;
-    font-weight: extra-bold;
     font-size: 48px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 300px;
+    margin: 50px 0 10px 0;
 }
 .awesomeWebsite p {
     color: #E5E7EB;
     margin: 0;
     font-size: 18px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    padding-left: 300px;
 }
-.placeholderBox {
-    height: 200px;
-    width: 400px;
-    background-color: gray;
-    text-align: center;
+.button {
+    padding-left: 300px;
 }
 .firstSignUpButton {
     background-color: #3882F6;
@@ -99,7 +110,19 @@ li a {
     padding: 10px 30px 10px 30px;
     margin: 10px 0;
     font-weight: bold;
+    font-size: 15px;
     width: 120px;
+    cursor: pointer;
+}
+.placeholderBox {
+    height: 200px;
+    width: 300px;
+    background-color: gray;
+    color: #E5E7EB;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 26px;
+    place-content: center;
 }
 
 /* Some random information */
@@ -111,20 +134,20 @@ li a {
 .flex-container-information {
     display: flex;
     flex-direction: row;
-    padding: 50px 300px;
+    justify-content: center;
 }
 .box {
-    height: 150px;
-    width: 150px;
+    height: 140px;
+    width: auto;
     background-color: none;
     border: solid #3882F6 2px;
-    border-radius: 10px;  
+    border-radius: 10px;
 }
 figcaption {
-    color: #E5E7EB;
     text-align: center;
     display: center;
     color: #1f2937;
+    width: 150px;
 }
 
 /* Quote */
@@ -135,7 +158,6 @@ figcaption {
     color: #1f2937;
 }
 .quote p {
-    font-style: italic;
     font-family: "RobotoLightItalic";
     font-size: 36px;
     display: flex;
@@ -143,7 +165,7 @@ figcaption {
     align-items: center;
 }
 .quote h4 {
-    font-size: 18px;
+    font-size: 26px;
     display: flex;
     justify-content: right;
     align-items:flex-end;
@@ -152,33 +174,40 @@ figcaption {
 
 /* Call to action */
 
-.blueDiv {
-    margin: 50px;
+.actionTime {
+    margin: 110px 240px;
     background-color: #3882F6;
     color: #E5E7EB;
-    padding: 40px;
-    display: flex;
-    justify-content: left;
+    display: grid;
+    justify-content: center;
+}
+.blueDiv {
+    display: inline-block;
+    align-items: center;
+    padding-top: 40px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    width: 750px;
 }
 .blueDiv h2 {
     font-family: "RobotoBold";
 }
-.blueDiv p {
-    background-color: #3882F6;
-    color: #E5E7EB;
-    padding: 40px;
-    display: flex;
-    justify-content: left;
+.button-div {
+    display: block;
+    align-items: right;
+    margin-bottom: 40px;
 }
 .secondSignUpButton {
     background-color: #3882F6;
-    border: solid white 2px;
+    border: solid #E5E7EB 2px;
     border-radius: 10%;
-    padding: 5px 10px;
     color: #E5E7EB;    
-    display: flex;
-    justify-content: left;
-
+    padding: 10px 30px 10px 30px;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 15px;
+    width: 120px;
+    cursor: pointer;
 }
 /* Footer */
 
@@ -187,4 +216,25 @@ footer {
     padding: 30px;
     color: #F9FAF8;
     text-align: center;
+}
+
+/* Media */
+
+@media (max-width: 640px) {
+    .info-container {
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+    .awesomeWebsite {
+        width: 500px;
+    }
+    .button {
+        width: 140px;
+        height: 140px;
+    }
+    .menu {
+        display: block;
+    }
+    .navbar-right ul {
+        display: none;
+    }
 }
