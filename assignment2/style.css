@@ -16,7 +16,6 @@
 }
 
 
-
 body {
     margin: auto;
     padding: auto;
@@ -103,7 +102,6 @@ li a {
     width: 120px;
 }
 
-
 /* Some random information */
 
 .randomInfo h1 {
@@ -149,7 +147,9 @@ figcaption {
     display: flex;
     justify-content: right;
     align-items:flex-end;
+    font-family: "RobotoBold";
 }
+
 /* Call to action */
 
 .blueDiv {
@@ -170,7 +170,6 @@ figcaption {
     display: flex;
     justify-content: left;
 }
-
 .secondSignUpButton {
     background-color: #3882F6;
     border: solid white 2px;
@@ -181,7 +180,6 @@ figcaption {
     justify-content: left;
 
 }
-
 /* Footer */
 
 footer {
