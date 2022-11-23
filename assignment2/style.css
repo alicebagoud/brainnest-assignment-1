@@ -15,22 +15,19 @@
     src: url(./Roboto/Roboto-Bold.ttf);
 }
 
-
-/* Nav Bar */
 body {
     margin: 0;
     padding: 0;
     font-family: "Roboto";
 }
 
+/* Nav Bar */
+
 nav {
     display: flex;
     justify-content: space-between;
     padding: 0 300px;
     background-color: #1f2937;
-}
-.menu {
-    display: none;
 }
 .navbar-left h3,
 .navbar-right ul {
@@ -49,12 +46,8 @@ nav {
     font-family: "RobotoBold";
     font-size: 24px;
     color: #F9FAF8;
-    padding: 15px 0 0 0;
     margin: 0;
     text-decoration: none;
-}
-.navbar-right {
-    padding: 15px;
 }
 .navbar-right ul li a {
     text-decoration: none;
@@ -71,36 +64,30 @@ nav {
 
 .main-container {
     background-color: #1f2937;
-    width: 100%;
+    display: flex;
+    gap: 30px;
+    width: auto;
+    padding: 50px 300px;
 }
 .info-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 240px);
-    gap: 26px;
-    place-content: center;
+    display: flex;
+    gap: 30px;
+    width: auto;
 }
 .awesomeWebsite {
     background-color: #1f2937;
-    width: 750px;
+    width: 45%;
 }
 .awesomeWebsite h1 {
     font-family: "RobotoExtraBold";
     color: #F9FAF8;
     font-size: 48px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 300px;
-    margin: 50px 0 10px 0;
+    margin: 0 0 5px 0;
 }
 .awesomeWebsite p {
     color: #E5E7EB;
     margin: 0;
     font-size: 18px;
-    padding-left: 300px;
-}
-.button {
-    padding-left: 300px;
 }
 .firstSignUpButton {
     background-color: #3882F6;
@@ -115,14 +102,14 @@ nav {
     cursor: pointer;
 }
 .placeholderBox {
-    height: 200px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     background-color: gray;
     color: #E5E7EB;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 240px);
-    gap: 26px;
     place-content: center;
+    width: 65%;
+    display: flex;
+    align-items: center;
 }
 
 /* Some random information */
@@ -154,15 +141,12 @@ figcaption {
 
 .quote {
     background-color: #E5E7EB;
-    padding: 50px 470px;
+    padding: 50px 430px;
     color: #1f2937;
 }
 .quote p {
     font-family: "RobotoLightItalic";
     font-size: 36px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .quote h4 {
     font-size: 26px;
@@ -175,33 +159,35 @@ figcaption {
 /* Call to action */
 
 .actionTime {
-    margin: 110px 240px;
+    margin: 100px 200px;
     background-color: #3882F6;
     color: #E5E7EB;
-    display: grid;
-    justify-content: center;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
 }
 .blueDiv {
     display: inline-block;
     align-items: center;
-    padding-top: 40px;
+    padding: 40px 100px;
     background-color: #3882F6;
     color: #E5E7EB;
-    width: 750px;
 }
 .blueDiv h2 {
     font-family: "RobotoBold";
+    margin: 0 0 -10px 0;
 }
 .button-div {
-    display: block;
-    align-items: right;
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: inherit;
 }
 .secondSignUpButton {
     background-color: #3882F6;
+    color: #E5E7EB;    
     border: solid #E5E7EB 2px;
     border-radius: 10%;
-    color: #E5E7EB;    
     padding: 10px 30px 10px 30px;
     margin: 10px 0;
     font-weight: bold;
@@ -216,25 +202,4 @@ footer {
     padding: 30px;
     color: #F9FAF8;
     text-align: center;
-}
-
-/* Media */
-
-@media (max-width: 640px) {
-    .info-container {
-        grid-template-columns: repeat(auto-fill, 140px);
-    }
-    .awesomeWebsite {
-        width: 500px;
-    }
-    .button {
-        width: 140px;
-        height: 140px;
-    }
-    .menu {
-        display: block;
-    }
-    .navbar-right ul {
-        display: none;
-    }
 }
