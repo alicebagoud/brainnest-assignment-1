@@ -1,4 +1,4 @@
-
+// Square
 
 const squareButton = document.querySelector("#squareButton");
 
@@ -11,6 +11,8 @@ function squareDiagonal() {
     pResultSquare.innerText = "The diagonal of a 9cm size square is: " + diagonal + " cm.";
 }
 
+
+// Triangle
 
 const triangleButton = document.querySelector("#triangleButton");
 
@@ -39,10 +41,14 @@ function triangleArea() {
 
     const area = Math.sqrt(semiPerimeter(semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3));
 
+    // TODO ERROR!! 
+    
     const pResultTriangle = document.querySelector("#pResultTriangle");
     pResultTriangle.innerText = "The area of a 5cm, 6cm and 7cm side triangle is: " + area + " cm";
 }
 
+
+// Circles
 
 const circleCircumButton = document.querySelector("#circleCircumButton");
 
@@ -55,6 +61,7 @@ function circleCircum() {
     const pResultCircleCircum = document.querySelector("#pResultCircleCircum");
     pResultCircleCircum.innerText = "The circumference of a 5cm radius circle is: " + circumference + " cm";
 }
+
 
 const surfaceCircleButton = document.querySelector("#surfaceCircleButton");
 
