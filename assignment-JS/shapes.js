@@ -8,7 +8,7 @@ function squareDiagonal() {
     const diagonal = Math.sqrt(2 * squareSide);
 
     const pResultSquare = document.querySelector("#pResultSquare");
-    pResultSquare.innerText = "The diagonal of a 9cm size square is: " + diagonal + " cm.";
+    pResultSquare.innerText = "The diagonal of a 9cm size square is: " + Math.trunc(diagonal) + " cm.";
 }
 
 
@@ -16,22 +16,6 @@ function squareDiagonal() {
 
 const triangleButton = document.querySelector("#triangleButton");
 
-
-/* function triangleArea() {
-    const side1 = 5;
-    const side2 = 6;
-    const side3 = 7;
-
-    // TODO side3 ?? 
-
-    const height = Math.sqrt(Math.pow(side2, 2) - (Math.pow(side1, 2) / 4));
-
-    const area = (side1 * height) / 2;
-
-    const pResultTriangle = document.querySelector("#pResultTriangle");
-    pResultTriangle.innerText = "The area of a 5cm, 6cm and 7cm side triangle is: " + area + " cm";
-}
- */
 function triangleArea() {
     const side1 = 5;
     const side2 = 6;
@@ -39,12 +23,10 @@ function triangleArea() {
 
     const semiPerimeter = (side1 + side2 + side2) / 2;
 
-    const area = Math.sqrt(semiPerimeter(semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3));
-
-    // TODO ERROR!! 
+    const area = Math.sqrt(semiPerimeter * (semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3));
     
     const pResultTriangle = document.querySelector("#pResultTriangle");
-    pResultTriangle.innerText = "The area of a 5cm, 6cm and 7cm side triangle is: " + area + " cm";
+    pResultTriangle.innerText = "The area of a 5cm, 6cm and 7cm side triangle is: " + Math.trunc(area) + " cm";
 }
 
 
@@ -59,7 +41,7 @@ function circleCircum() {
     const circumference = 2 * Math.PI * radius;
 
     const pResultCircleCircum = document.querySelector("#pResultCircleCircum");
-    pResultCircleCircum.innerText = "The circumference of a 5cm radius circle is: " + circumference + " cm";
+    pResultCircleCircum.innerText = "The circumference of a 5cm radius circle is: " + Math.trunc(circumference) + " cm";
 }
 
 
@@ -72,7 +54,7 @@ function surfaceCircle() {
     const area = Math.PI * Math.pow(radius, 2);
 
     const pResultSurfaceCircle = document.querySelector("#pResultSurfaceCircle");
-    pResultSurfaceCircle.innerText = "The circumference of a 5cm radius circle is: " + area + " cm";
+    pResultSurfaceCircle.innerText = "The circumference of a 5cm radius circle is: " + Math.trunc(area) + " cm";
 }
 
 
