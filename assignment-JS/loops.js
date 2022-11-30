@@ -1,3 +1,5 @@
+// Larger
+
 const button = document.getElementById("largerOneButton");
 const pResultLarger = document.getElementById("pResultLarger");
 
@@ -29,3 +31,22 @@ if (parseInt(num1, 10) > parseInt(num2, 10)) {
 } else {
     console.log("The values " + num1 + " and " + num2 + " are equal.");
 } */
+
+
+// Even or Odd
+
+const buttonEvenOdd = document.getElementById("evenOddButton");
+const pResultEvenOdd = document.getElementById("pResultEvenOdd");
+
+
+function evenOrOdd() {
+    const num = document.getElementById("evenOddInt");
+
+
+    if (parseInt(num.value) % 2 == 0) {
+        pResultEvenOdd.innerText = "It an even!";
+    } 
+    else {
+        pResultEvenOdd.innerText = "It's an odd!";
+    }
+} 
