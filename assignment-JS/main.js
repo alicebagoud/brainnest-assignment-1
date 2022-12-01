@@ -15,7 +15,7 @@ function playRound(round) {
     const computerSelection = computerChoice();
     const winner = checkWinner(playerSelection, computerSelection);
     winners.push(winner);
-    logRound(playerSelection, computerSelection, winner, round)
+    logRound(playerSelection, computerSelection, winner, round);
 }
 
 function playerChoice() {
@@ -54,9 +54,9 @@ function checkWinner(choiceP, choiceC) {
         (choiceP === "paper" && choiceC == "rock") || 
         (choiceP === "scissors" && choiceC == "paper")
     ) {
-        return "Player ";
+        return "Player";
     } else {
-        return "Computer ";
+        return "Computer";
     }
 }
 
@@ -74,7 +74,7 @@ function logRound(playerChoice, computerChoice, winner, round) {
     console.log("Round: ", round);
     console.log("Player Chose: ", playerChoice);
     console.log("Computer Chose: ", computerChoice);
-    console.log(winner, "won the round");
+    console.log(winner, "won the Round");
     console.log("---------------------------------");
 }
 
