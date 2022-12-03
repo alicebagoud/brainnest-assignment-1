@@ -24,26 +24,11 @@ function playerChoice() {
         input = prompt("Please type Rock, Paper, or Scissors to continue");
     }
     input = input.toLowerCase();
-
-    let check = validateInput(input);
-    while (check == false) {
-        input = prompt("Type Rock, Paper or Scissors. Spelling need to be exact, but capitalization doesn't matter");
-    
-    while (input == null){
-        input = prompt("Type Rock, Paper, Scissors");
-    }
-    input = input.toLowerCase();
-    check = validateInput(input);
-    }
     return input;
 }
 
 function computerChoice() {
     return choices[Math.floor(Math.random() * choices.length)] 
-}
-
-function validateInput(choice) {
-    return choices.includes(choice);
 }
 
 function checkWinner(choiceP, choiceC) {

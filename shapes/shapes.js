@@ -26,7 +26,7 @@ function triangleArea() {
     const area = Math.sqrt(semiPerimeter * (semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3));
     
     const pResultTriangle = document.querySelector("#pResultTriangle");
-    pResultTriangle.innerText = "The area of a 5cm, 6cm and 7cm side triangle is: " + Math.trunc(area) + " cm";
+    pResultTriangle.innerText = "The area of a 5cm, 6cm and 7cm side triangle is: " + Math.trunc(area) + " cm2";
 }
 
 
@@ -54,7 +54,7 @@ function surfaceCircle() {
     const area = Math.PI * Math.pow(radius, 2);
 
     const pResultSurfaceCircle = document.querySelector("#pResultSurfaceCircle");
-    pResultSurfaceCircle.innerText = "The circumference of a 5cm radius circle is: " + Math.trunc(area) + " cm";
+    pResultSurfaceCircle.innerText = "The circumference of a 5cm radius circle is: " + Math.trunc(area) + " cm2";
 }
 
 
