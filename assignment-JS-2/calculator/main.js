@@ -34,6 +34,7 @@ class Calculator {
       let computation
       const prev = parseFloat(this.previousOperand)
       const current = parseFloat(this.currentOperand)
+     
       if (isNaN(prev) || isNaN(current)) return
       switch (this.operation) {
         case '+':
@@ -45,12 +46,12 @@ class Calculator {
         case '*':
           computation = prev * current
           break
-        case '÷':
+        case '/':
           computation = prev / current
           break
         default:
           return
-      }
+      } 
       this.currentOperand = computation
       this.operation = undefined
       this.previousOperand = ''
@@ -124,12 +125,12 @@ class Calculator {
     calculator.delete()
     calculator.updateDisplay()
   })
+
+  // Keyboard Support
   
   document.addEventListener('keydown', function (event) {
     let patternForNumbers = /[0-9]/g;
     let patternForOperators = /[+-/*]/g;
-
-  // TODO KEY Division not working ???
 
     if (event.key.match(patternForNumbers)) {
       event.preventDefault();
