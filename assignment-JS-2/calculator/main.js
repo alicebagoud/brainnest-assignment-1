@@ -127,7 +127,10 @@ class Calculator {
   
   document.addEventListener('keydown', function (event) {
     let patternForNumbers = /[0-9]/g;
-    let patternForOperators = /[+\-*\/]/g
+    let patternForOperators = /[+-/*]/g;
+
+  // TODO KEY Division not working ???
+
     if (event.key.match(patternForNumbers)) {
       event.preventDefault();
       calculator.appendNumber(event.key)
