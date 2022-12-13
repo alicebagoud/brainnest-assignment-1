@@ -1,50 +1,23 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    font-family: Gotham Rounded, sans-serif;
-    font-weight: normal;
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px, 0px, 43px, 17px bisque;
 }
-body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #00AAFF, #00FF6C);
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
 }
-.calculator-grid {
+.buttons {
     display: grid;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh; /* 100% of the height of the page */
-    grid-template-columns: repeat(4, 100px); /* 4 columns, 100px height */
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px); /* For the numbers to have 120px and fit no matter how many we enter. We also want 5 rows of 100px each */
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.calculator-grid > button { /* All buttons inside a grid */
-    cursor: pointer;
-    font-size: 2rem;
-    border: 1px solid white;
-    outline: none;
-    background-color: rgba(255, 255, 255, .75);
-}
-.calculator-grid > button:hover {
-    background-color: rgba(255, 255, 2555, .40);
-}
-.span-two {
-    grid-column: span 2;
-}
-.output {
-    grid-column: 1 / -1; /* Going from the column number 1 to the last column -1 */
-    background-color: rgba(0, 0, 0, .75);
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 10px;
-    word-wrap: break-word; /* to see where we want to break our words */
-    word-break: break-all; /* if the current value is to long it will wrap to the next line */
-}
-.output .previous-operand {
-    color: rgba(255, 255, 255, 75);
-    font-size: 1.5rem;
-}
-.output .current-operand {
-    color: white;
-    font-size: 2.5rem;
+
+.buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
 }

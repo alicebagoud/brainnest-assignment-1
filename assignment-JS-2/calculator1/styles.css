@@ -1,4 +1,4 @@
-/* *, *::before, *::after {
+*, *::before, *::after {
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     font-weight: normal;
@@ -12,36 +12,36 @@ body {
     display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 100vh; 
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat (5, 100px);
+    min-height: 100vh; /* 100% of the height of the page */
+    grid-template-columns: repeat(4, 100px); /* 4 columns, 100px height */
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px); /* For the numbers to have 120px and fit no matter how many we enter. We also want 5 rows of 100px each */
 }
-.calculator-grid > button {
+.calculator-grid > button { /* All buttons inside a grid */
     cursor: pointer;
     font-size: 2rem;
-    border: 1px, solid #FFFFFF;
+    border: 1px solid #FFFFFF;
     outline: none;
     background-color: bisque;
   }
 
-    .calculator-grid > button:hover {
-      background-color: #CBCE91FF;
-    }
+.calculator-grid > button:hover {
+    background-color: #CBCE91FF;
+}
 .span-two {
     grid-column: span 2;
     color: green;
     background-color: rgba(139, 0, 139, 0.8);
 }
 .output {
-    grid-column: 1 / -1;
+    grid-column: 1 / -1; /* Going from the column number 1 to the last column -1 */
     background-color: rgba(21, 18, 18, 0.75);
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
     flex-direction: column;
     padding: 25px;
-    word-wrap: break-word;
-    word-break: break-all;
+    word-wrap: break-word; /* to see where we want to break our words */
+    word-break: break-all; /* if the current value is to long it will wrap to the next line */
 }
 .output .previous-operand {
     color: bisque;
@@ -50,4 +50,4 @@ body {
 .output .current-operand {
     color: white;
     font-size: 30px;
-} */
+}
