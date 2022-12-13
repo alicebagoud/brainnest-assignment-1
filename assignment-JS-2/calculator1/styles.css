@@ -1,4 +1,4 @@
-*, *::before, *::after {
+/* *, *::before, *::after {
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     font-weight: normal;
@@ -50,4 +50,4 @@ body {
 .output .current-operand {
     color: white;
     font-size: 30px;
-}
+} */

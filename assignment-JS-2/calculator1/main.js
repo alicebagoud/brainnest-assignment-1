@@ -1,4 +1,4 @@
-class Calculator {
+/* class Calculator {
   constructor(previousOperandTextElement, currentOperandTextElement) {
     this.previousOperandTextElement = previousOperandTextElement
     this.currentOperandTextElement = currentOperandTextElement
@@ -163,3 +163,4 @@ document.addEventListener('keydown', function (event) {
   }
 
 });
+ */
