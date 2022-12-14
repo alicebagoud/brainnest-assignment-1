@@ -9,6 +9,7 @@
     line-height: 70px;
     padding: 16px 8px;
     font-size: 25px;
+    border: 1px solid #999;
 }
 .buttons {
     display: grid;
@@ -21,3 +22,23 @@
     border-top: 1px solid #999;
     border-right: 1px solid #999;
 }
+.button {
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: rgb(215, 123, 18);
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+.buttons #span-two {
+    grid-column: span 2;
+}
+.equal {
+    background-color: #3131ef;
+    color: white;
+}
+
